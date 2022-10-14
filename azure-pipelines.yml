@@ -17,10 +17,6 @@ strategy:
     Python37:
       python.version: '3.7'
 
-container:
-- task: ContainerBuild@0
-  inputs:
-    Dockerfile: 'Dockerfile'
 
 
 steps:
@@ -38,3 +34,9 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+
+container:
+- task: ContainerBuild@0
+  inputs:
+    Dockerfile: 'Dockerfile'
+
