@@ -17,6 +17,12 @@ strategy:
     Python37:
       python.version: '3.7'
 
+container:
+- task: ContainerBuild@0
+  inputs:
+    Dockerfile: 'Dockerfile'
+
+
 steps:
 - task: UsePythonVersion@0
   inputs:
