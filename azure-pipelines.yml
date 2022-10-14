@@ -17,7 +17,8 @@ strategy:
     Python37:
       python.version: '3.7'
 
-
+variables:
+  imageName: Docker-container
 
 steps:
 - task: UsePythonVersion@0
